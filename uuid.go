@@ -1,10 +1,10 @@
 package misc
 
 import (
-	uuid "github.com/satori/go.uuid"
+	"github.com/google/uuid"
 )
 
 // UUID returns random generated UUID.
 func UUID() string {
-	return uuid.Must(uuid.NewV4()).String()
+	return uuid.New().String()
 }
